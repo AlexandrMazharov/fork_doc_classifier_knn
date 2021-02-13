@@ -28,6 +28,7 @@ public class FileDocumentCache implements DocumentCache{
 			Document document = null;
 			try {
 				document = DocumentFactory.create(file);
+
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}

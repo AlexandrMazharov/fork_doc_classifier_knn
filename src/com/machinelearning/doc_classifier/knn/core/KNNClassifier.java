@@ -66,12 +66,12 @@ public class KNNClassifier {
 
 			String estimatedCategory = categoryClassifier.estimate(results,categoryNames,k);
 			checkEstimation(estimatedCategory,testDocumentName);
-
-			logger.log(Level.INFO, "Document \t {0} \t classified as \t {1}", new Object[]{testDocumentName,estimatedCategory});
+System.out.println(		"Document " + testDocumentName+  "classified as "+ estimatedCategory);
+//			logger.log(Level.INFO, "Document \t {0} \t classified as \t {1}", new Object[]{testDocumentName,estimatedCategory});
 					
 			long stopTime = System.currentTimeMillis();
 		    long elapsedTime = stopTime - startTime;
-		    logger.log(Level.INFO, "{0} classified in {1} ms", new Object[]{testDocumentName,elapsedTime});
+//		    logger.log(Level.INFO, "{0} classified in {1} ms", new Object[]{testDocumentName,elapsedTime});
 		}
 		
 		printResults();

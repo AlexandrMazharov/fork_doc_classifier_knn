@@ -11,10 +11,10 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		String dirName = null;
-		String []categoryNames = null;
-		int numberOfFilesToTrainForEachCategory = 0;
-		int k=1;
+		String dirName = "C://Users/Alexander/Desktop/nc/doc_classifier_knn/data";
+		String []categoryNames = {"a","b","c"};
+		int numberOfFilesToTrainForEachCategory = 60;
+		int k=3;
 		
 		String temp;
 		
